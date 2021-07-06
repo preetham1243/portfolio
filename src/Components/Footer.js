@@ -50,23 +50,24 @@ function Footer() {
            <Grid container direction="row" alignItems="center" justify="center" spacing={0}>
              <Grid item xs={6} sm={4} md={4}  >
                <div className="pov">
-                <Box className="preetham" color="white" bgcolor="palevioletred" p={2} onClick={handleClick} style={{cursor:'pointer'}}>
-                <Snackbar open={open}  autoHideDuration={3000} onClose={handleClose}>
-           <Alert  onClose={handleClose} severity="info"  style={{backgroundColor:'#bddbf2', width:'350px',color:'black'}}>
-               <h6>You were on the same page</h6>
-           </Alert>
-
-       </Snackbar>
-                <h4 >Preetham</h4>
+               <Box onClick={kiransite} className="kiran" color="white" bgcolor="palevioletred" p={2}>
+                  <h4 >Preetham</h4>
                 </Box>
                 </div>
               </Grid>
              
               <Grid item xs={6} sm={4} md={4} >
               <div className="pov1">
-                <Box onClick={kiransite} className="kiran" color="white" bgcolor="palevioletred" p={2}>
-                  <h4 >Kiran</h4>
+              <Box className="preetham" color="white" bgcolor="palevioletred" p={2} onClick={handleClick} style={{cursor:'pointer'}}>
+                <Snackbar open={open}  autoHideDuration={3000} onClose={handleClose}>
+           <Alert  onClose={handleClose} severity="info"  style={{backgroundColor:'#bddbf2', width:'350px',color:'black'}}>
+               <h6>You were on the same page</h6>
+           </Alert>
+
+       </Snackbar>
+                <h4 >Kiran</h4>
                 </Box>
+                
                 </div>
               </Grid>
             </Grid>
