@@ -1,0 +1,152 @@
+.accordianmain{
+  
+   height:fit-content;
+   min-height:120vh;
+   background-image: linear-gradient(to left, #ed4264 , #549ee4);
+   
+  
+}
+#accordian1{
+   background-color: #005792  ;
+
+}
+
+#accordian2{
+   background-color: #28B5B5;
+}
+
+#accordian3{
+   background-color: #F2F4C3;
+   
+}
+#accordian3det{
+   height:fit-content
+}
+#accordian4{
+   background-color: #D35D6E;
+   
+}
+#accordian5{
+   background-color: #cbdd2b;
+   
+}
+
+
+.Acoordiantwo{
+   
+   display:flex;
+   flex-direction:row;
+   
+   
+}
+.Acoordianicons{
+   margin-left: 100;
+}
+
+#inneraccordian2{
+ background-color:#259191;
+  
+}
+
+
+
+
+.accordian2paper{
+   width: 100%;
+   height:17rem;
+   border-color: green;
+   cursor: pointer;
+   padding: 2%;
+
+   
+}
+.accordian2cards {
+   position: relative;
+   z-index: 1;
+   height:15rem;
+   color:#1e1f26;
+   padding-left:5%;
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+   justify-content: center;
+}
+
+
+
+.accordian2cards .schooling {
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   
+   background: center center;
+   background-size: cover;
+   background-repeat:no-repeat;
+   right: 0;
+   opacity: 0.2;
+   width:100%;
+   height:90%;
+ 
+}
+
+
+
+
+
+.Card{
+   border-radius:2%;
+   margin:2%;
+   
+   box-shadow:0px 1px 10px 1px black;
+   height:25rem;
+   
+  
+}
+
+.uppercontainer{
+   
+   max-height: 8rem;
+}
+.imagecontainer{
+   
+
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.imagecontainer img{
+   border-radius: 50%;
+   margin-top:15%;
+
+   height:9rem;
+    
+}
+
+.lowercontainer{
+   padding-top: 20%;
+   
+   text-align:center;
+}
+
+#achievements{
+   background-color:rgb(21, 21, 53);
+   color:aliceblue;
+   height:fit-content;
+   padding:10%;
+   font-family: cursive;
+   
+}
+
+#achievementbadge{
+   height:4rem;
+   width:4rem;
+   margin-bottom: -12%;
+ 
+}
+
+.hobbiesavatart{
+   width:6vh;
+}

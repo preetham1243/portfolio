@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@467;700&display=swap');
+.footermain{
+  
+    background-color: #182219;
+    color:white;
+    padding-top: 2%;
+    
+    
+}
+.developedby{
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+ 
+}
+
+.footercontact{
+  color:#FFD700;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footerfirsthalf{
+  height:fit-content;
+  
+  }
+  
+
+.footersecondhalf{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}  
+
+.footersomething{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+.footercounter{
+      width:100%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+.kiran{
+  cursor:pointer;
+  max-width:35vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-width:25vh;
+  margin-left:2%
+  
+}
+.pov{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.preetham{
+  max-width:35vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25vh;
+  margin-right: 5%;
+  
+}
+.pov1{
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+

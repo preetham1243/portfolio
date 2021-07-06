@@ -1,0 +1,79 @@
+.profiles{
+  background-image: linear-gradient(to right, #ed4264 , #549ee4);
+  height:fit-content;
+  min-height: 48rem;
+  
+}
+.io{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profileavatar{
+    width:5vh;
+    
+}
+
+
+
+.profilebutton {
+    background-color: var(--background-color);
+    color: #222;
+    padding: .7em 2em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+     
+
+    --background-color: #E3E3E3;
+    --border-size: 2px;
+    --accent-color: rgb(39, 233, 21);
+  }
+
+.profilebutton.profilebutton-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(39, 233, 21);
+    transition: transform 400ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin:left;
+  }
+  
+  .profilebutton.profilebutton-background-slide:hover::before,
+  .profilebutton.profilebutton-background-slide:focus::before {
+    transform: scaleX(1);
+    
+  }
+  
+  .profilebutton.profilebutton-background-slide {
+    transition: color 300ms ease-in-out;
+    z-index: 1;
+  }
+  
+  
+  .profilebutton.profilebutton-background-slide:hover,
+  .profilebutton.profilebutton-background-slide:focus {
+    color: white;
+  }
+
+
+.buttonprofileadj{
+  display: flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+}
+.feedback{
+  
+  padding-top:15%
+
+}
+#formdata{
+  border:3px solid rgb(50, 53, 3);
+}

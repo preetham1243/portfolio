@@ -1,0 +1,113 @@
+.projectmain{
+    background-image: linear-gradient(to right, #ed4264 , #549ee4);
+}
+.projectbox{
+   color:white;
+    background-color: rgb(24, 27, 51);
+    padding:5%;
+    height:fit-content;
+    width:90%;
+    margin-left:5%;
+    
+    
+}
+.projectname{
+    padding-bottom:2%;
+    width:fit-content;
+}
+.projectname:hover{
+    color:rgb(92, 191, 216);
+    cursor:pointer;
+    transition: all 0.6s ease-in-out;
+    transform:scale(1.1);
+}
+
+.imgp {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+   width:fit-content;
+    
+    padding-top: 0;
+    margin-right:20px;
+    
+}
+.imgp img {
+    width:100%;
+    max-height:100%;
+  -webkit-transition: all 1.9s ease; /* Safari and Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* IE 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  background-size: cover;
+}
+
+.imgp img:hover{
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
+}
+.projectbuttons{
+   display: inline-block;
+   
+}
+
+
+
+#projectlink:hover{
+    transition:transform 10s ease-in-out;
+    transform: scale(1.15);
+    
+    
+}
+.btn1 {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    
+    border-radius: 0.6em;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 1.2em 2.8em;
+    margin-left:10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn1:hover,
+  .btn1:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .third1 {
+    border-color: rgb(29, 119, 221);
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgb(29, 119, 221) inset, 0 0 0 0 rgb(29, 119, 221);
+    transition: all 150ms ease-in-out;
+  }
+    .third1:hover {
+      box-shadow: 0 0 10px 0 rgb(29, 119, 221) inset, 0 0 10px 4px rgb(29, 119, 221);
+      color:rgb(29, 119, 221)
+    }
+    .third2 {
+        
+        border-color: rgb(16, 199, 16);
+        color: #fff;
+        box-shadow: 0 0 40px 40px rgb(15, 224, 43) inset, 0 0 0 0 rgb(65, 204, 30);
+        transition: all 150ms ease-in-out;
+      }
+        .third2:hover {
+          box-shadow: 0 0 10px 0  inset, 0 0 10px 4px rgb(18, 214, 67);
+          color:lightgreen
+        }

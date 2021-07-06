@@ -1,0 +1,38 @@
+
+
+.homemain{
+    width:100%;
+}
+
+
+.homephoto{
+    background-image: linear-gradient(to right, #ed4264 , #549ee4);
+    width: 100%;
+    height:40rem;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    
+
+}
+
+.boxes{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+#linkinhome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#nameafterphoto{
+    font-family: "Lucida Handwriting";
+}
+
+.loginimg{
+    height:100%;
+    width:100%;
+}

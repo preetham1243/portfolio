@@ -1,0 +1,130 @@
+.btnn{
+    position:relative;
+    color:green;
+   
+    padding-top: 5rem;
+   
+    
+    
+}
+
+.dd{
+  
+   position: relative;
+   max-width: fit-content;
+   
+   
+}
+
+
+
+
+.brand{
+    position:relative;
+    background-color:rgba(127, 130, 133, 0.103);
+    
+    
+}
+.brand:hover::before{
+    content:'';
+    position: absolute;
+    background-color: rgb(0, 255, 21);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:-1
+    
+   
+    
+}
+.brand:hover::after{
+    top:-20px
+}
+
+.dd::after  {
+    content: '';
+    position:absolute;
+    width:100%;
+    height:0.175rem;
+    background-image: linear-gradient(to right, red, yellow);
+    bottom: 0;
+    left:0;
+    transform: scale(0,1);
+    transition: transform 0.4s ease-in-out;
+    
+
+}
+.dd:hover::after{
+    transform: scale(1,1);
+}
+
+/* .ff::after{
+    transform: scale(0,1);
+    transition: transform 0.2s ease-in-out;
+} */
+
+/* .ff:hover::after{
+    transform: scale(1,1);
+} */
+.navbar{    
+    background-color: rgb(42, 38, 61);
+    
+    
+}
+button {
+    margin: 1rem;
+  }
+  
+ .navbar .btn {
+    border-radius: 16px;
+    background-color: var(--background-colors);
+    color: rgb(32, 31, 31);
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    
+    --background-colors:#E3E3E3;
+    --background-color: #E3E3E3;
+    
+    --border-size: 2px;
+    --accent-color: #0AF;
+  }
+  
+  .navbar .btn.btn-border-pop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius:fixed;
+    border: var(--border-size) solid var(--background-color);
+    transition: top, left, right, bottom, 600ms ease-in-out;
+  }
+  
+  .navbar .btn.btn-border-pop:hover::before,
+  .navbar .btn.btn-border-pop:focus::before {
+    top: calc(var(--border-size) * -3);
+    left: calc(var(--border-size) * -3);
+    right: calc(var(--border-size) * -3);
+    bottom: calc(var(--border-size) * -3);
+    
+    border-width: 3px;
+    background-color:rgb(233, 85, 17);
+  }
+  
+
+  .loginnavbar{
+      display: flex;
+      align-items:flex-end;
+      justify-content:flex-end;
+  }
+
+  .loginimg{
+    height:100%;
+    width:100%;
+}
