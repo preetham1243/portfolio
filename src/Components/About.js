@@ -107,7 +107,7 @@ function nhobbies(val){
       <ListItem key={val.id}>
         <ListItemAvatar>
           <Avatar>
-            <img className="hobbiesavatart" src={val.imgsrc} />
+            <img className="hobbiesavatart" src={val.imgsrc} alt="" />
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary={val.hobbies} secondary={val.desc} />
@@ -122,7 +122,7 @@ function nlanguages(val) {
     <ListItem key={val.id}>
     <ListItemAvatar>
       <Avatar>
-      <img className="hobbiesavatart" src={val.imgsrc} />
+      <img className="hobbiesavatart" src={val.imgsrc} alt="" />
       </Avatar>
         </ListItemAvatar>
         <ListItemText primary={val.lan}/>
@@ -146,7 +146,7 @@ function About() {
             <div className="uppercontainer" style={{backgroundImage: `url(${profilebgimage})`}}>
               <div className="imagecontainer">
 
-                <img src={kiranresumeimage} alt ="Profile picture" />
+                <img src={kiranresumeimage} alt="" />
 
               </div>
             </div>
@@ -170,7 +170,7 @@ function About() {
         
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+         
           id="accordian1"
         >
           <div className="Acoordiantwo">
@@ -196,7 +196,7 @@ function About() {
         <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
-              id="panel2a-header"
+              
               id="accordian2"
             >
               <div className="Acoordiantwo">
@@ -225,7 +225,7 @@ function About() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          
           id="accordian3"
         >
           <div className="Acoordiantwo">
@@ -424,7 +424,7 @@ function About() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          
           id="accordian4"
         >
           <div className="Acoordiantwo">
@@ -450,7 +450,7 @@ function About() {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
+          
           id="accordian5"
         >
           <div className="Acoordiantwo">

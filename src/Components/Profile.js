@@ -12,9 +12,9 @@ function nprofiles(val){
       }
     return(
     
-    <Grid item xs={12} sm={6} md={6} lg={5} >
+    <Grid item xs={12} sm={6} md={6} lg={5} key={val.id}>
         {val.t ? 
-        <Box color="white" bgcolor={val.bgcolor} p={2} style={{marginBottom:20,cursor:'pointer'}} onClick={profilelink} className="io">
+        <Box color="white" bgcolor={val.bgcolor} p={2} style={{marginBottom:20,cursor:'pointer'}} onClick={profilelink} className="io" >
         <Avatar>
             <img src={val.imgsrc} alt="df" id="profileavatar"/>
         </Avatar>
