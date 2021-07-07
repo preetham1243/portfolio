@@ -5,16 +5,20 @@ import Playingcricketimage from './Assests/Playingcricketimage.png';
 import Playingfootballimage from './Assests/Playingfootballimage.jpg';
 import Internetsurfingimage from './Assests/Internetsurfingimage.jpg';
 import webseriesimage from './Assests/webseriesimage.jpg';
-import Datavisualization from './Assests/Datavisualization.jpg'
+import Datavisualization from './Assests/Datavisualization.jpg';
+import Teluguimage from './Assests/Teluguimage.png';
+import Tamilimage from './Assests/Tamilimage.png';
+import Hindiimage from './Assests/Hindiimage.jpg';
+import Englishimage from './Assests/Englishimage.jpg';
 export const acievementsdata =[
     {
-        desc:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+        desc:"Participated in several hackathons"
     },
     {
-        desc:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+        desc:"Cleared two rounds in TCS codevita"
     },
     {
-        desc:"Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
+        desc:"Got selected for online training In EPAM company"
     },
     
 ]
@@ -80,17 +84,22 @@ export const profiles=[
 export const lang = [
 
      {
-         lan:'Telugu'
+         lan:'Telugu',
+         imgsrc:Teluguimage
      },
      {
-        lan:'Hindi'
+        lan:'Hindi',
+        imgsrc:Hindiimage,
+       },
+    {
+        lan:'English',
+        imgsrc:Englishimage,
+
     },
     {
-        lan:'English'
-    },
-    {
-        lan:'Tamil'
-    }
+        lan:'Tamil',
+        imgsrc:Tamilimage,
+       }
 
 ]
 
@@ -139,7 +148,7 @@ export const Projectdata = [
         projectname:"Portfolio",
         imgscr:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3qL7h_ydR2H5vChsNu8as2tIGgECr3amYA&usqp=CAU",
         date:"In Progress",
-        description:"A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity a paragraph is a sentence or a group of sentences that supports one central, unified idea.",
+        description:"Portfolio site is an idea to develop a website for ourselves that displays our resume. Here we can upload our data and it gets displayed. This project is under progrss,  and completed front end.",
         link1:"#",
         link2:"#",
     },
@@ -147,7 +156,7 @@ export const Projectdata = [
         projectname:"Santhi Nursery",
         imgscr:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs3qL7h_ydR2H5vChsNu8as2tIGgECr3amYA&usqp=CAU",
         date:"Sat, Jun 25th 21",
-        description:"A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity a paragraph is a sentence or a group of sentences that supports one central, unified idea.",
+        description:"Santhi Nursery site is created for a nursey in Kadiyampulnka village. Here we projected the nursery in a very beautiful way and in a interactive way. Here we can see crops they sell and seller details . It is a responsive static website through which we can view the items and contact the seller for delivery of items.",
         link1:"https://santhinursery.herokuapp.com/",
         link2:"https://www.github.com/preetham1243/santhinursery",
     }

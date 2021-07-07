@@ -135,6 +135,7 @@
    background-color:rgb(21, 21, 53);
    color:aliceblue;
    height:fit-content;
+   min-height:10rem;
    padding:10%;
    font-family: cursive;
    

@@ -54,7 +54,7 @@ function Profile() {
          </Grid>
          <Grid container direction="row" alignItems="center" justify="center" spacing={0}>
          <Grid item xs={12} sm={10} md={8} lg={6} className="feedback">
-            <h4> Please give us your Feedback here</h4>
+            <h4> Please give us your feedback here</h4>
          <form>
          <textarea rows="5" style={{resize: 'none',width:'100%'}}  id="formdata" htmlFor="formdata" placeholder="Enter">
          </textarea>
