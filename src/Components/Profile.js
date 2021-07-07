@@ -37,14 +37,7 @@ function nprofiles(val){
 
 
 function Profile() {
-    const another1 = () => {
-        var x = document.getElementById("formdata").value;
-        console.log(x)
-    }
-    const formdatafun = () => {
-        var x = document.getElementById("formdata").value;
-        console.log(x);
-    }
+ 
     return (
         <>
         <div className="profiles">

@@ -49,7 +49,7 @@ function nprojects(val) {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={6} >
             <div className=" imgp" style={{width:'100%'}}>
-                <img src={val.imgscr} alt="Project Image" />
+                <img src={val.imgscr} alt="" />
             </div>
             </Grid>
             </Grid>

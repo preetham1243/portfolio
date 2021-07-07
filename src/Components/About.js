@@ -48,11 +48,11 @@ function npersonalinfo(val){
 function nschooling(val){
   return(
     <Grid item xs={12} sm={12} md={12} lg={4}>
-  <Paper className="accordian2paper" elevation={8} >
+       <Paper className="accordian2paper" elevation={8} >
           <div className="accordian2cards">
             <div className="schooling" style={{backgroundImage:`url(${val.imgsrc})`}}></div>
             
-            <Typography variant="h6" style={{fontFamily:'cursive'}}>
+            <Typography component={'div'}  style={{fontFamily:'cursive'}}>
               <div className="row">
                 
               <div className="col">
@@ -103,11 +103,11 @@ function nachievements(val){
 
 function nhobbies(val){
   return(
-  
-      <ListItem>
+      
+      <ListItem key={val.keys}>
         <ListItemAvatar>
           <Avatar>
-            <img className="hobbiesavatart" src={val.imgsrc} />
+            <img className="hobbiesavatart" src={val.imgsrc} alt=""/>
           </Avatar>
         </ListItemAvatar>
         <ListItemText primary={val.hobbies} secondary={val.desc} />
@@ -119,10 +119,10 @@ function nhobbies(val){
 function nlanguages(val) {
   return(
     
-    <ListItem>
+    <ListItem key={val.keys}>
     <ListItemAvatar>
       <Avatar>
-      <img className="hobbiesavatart" src={val.imgsrc} />
+      <img className="hobbiesavatart" src={val.imgsrc} alt=""/>
       </Avatar>
         </ListItemAvatar>
         <ListItemText primary={val.lan}/>
@@ -138,7 +138,7 @@ function About() {
     <>
     
      <div  className="accordianmain"  style={{paddingTop:110}}>
-        <Grid container direction="row" alignItems="center" justify="center" spacing={4}>
+        <Grid key={66} container direction="row" alignItems="center" justify="center" spacing={4}>
           
           {/* side card */}
           <Grid item xs={12} sm={8} md={4} lg={3} style={{marginRight:0}}>
@@ -146,7 +146,7 @@ function About() {
             <div className="uppercontainer" style={{backgroundImage: `url(${profilebgimage})`}}>
               <div className="imagecontainer">
 
-                <img src={kiranresumeimage} alt ="Profile picture" />
+                <img src={kiranresumeimage} alt ="" />
 
               </div>
             </div>
@@ -165,12 +165,11 @@ function About() {
 
        {/* Acoordian1 */}
           <Grid item xs={12} sm={8} md={6} lg={6}>
-      <Accordion >
+       <Accordion key={87}>
         <AccordionSummary
         
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
           id="accordian1"
         >
           <div className="Acoordiantwo">
@@ -179,7 +178,7 @@ function About() {
           </div>
         </AccordionSummary>
         <AccordionDetails style={{backgroundColor:'lightblue'}}>
-          <Typography>
+          <Typography component={'div'} >
        
             <div className="">
               
@@ -192,12 +191,12 @@ function About() {
 
 
       {/* Accordian2 */}
-      <Accordion>
+       <Accordion key={88}>
         <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel2a-content"
-              id="panel2a-header"
               id="accordian2"
+              
             >
               <div className="Acoordiantwo">
                   <Typography className={classes.heading} style={{paddingRight:20}}> Schooling</Typography>
@@ -207,9 +206,9 @@ function About() {
         </AccordionSummary>
         <AccordionDetails id="inneraccordian2">
         
-              <Typography>
+              <Typography component={'div'} variant={'body2'}>
               <hr style={{height:3,color:'white'}}/>
-                 <Grid container direction="row" alignItems="center" justify="center" spacing={2}>
+                 <Grid key={12} container direction="row" alignItems="center" justify="center" spacing={2}>
                         {schooling.map(nschooling)}
                  </Grid>
 
@@ -221,12 +220,12 @@ function About() {
       {/* Accordian3 */}
 
 
-      <Accordion >
+      <Accordion key={89} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
           id="accordian3"
+          
         >
           <div className="Acoordiantwo">
           <Typography className={classes.heading} style={{paddingRight:20}}>Skills   </Typography>
@@ -235,7 +234,7 @@ function About() {
           </div>
         </AccordionSummary>
         <AccordionDetails  >
-        <Grid container direction="row" alignItems="center" justify="center" spacing={3} >
+        <Grid key={11}container direction="row" alignItems="center" justify="center" spacing={3} >
               
               <Grid item xs={8} sm={6} md={6} lg={4}>
               
@@ -420,12 +419,12 @@ function About() {
       </Accordion>
  
       {/* Fourth Accordion */}
-      <Accordion>
+       <Accordion key={90}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
           id="accordian4"
+          
         >
           <div className="Acoordiantwo">
           <Typography className={classes.heading} style={{paddingRight:20}}>Languages </Typography>
@@ -434,9 +433,9 @@ function About() {
         </AccordionSummary>
         <AccordionDetails>
         
-          <Typography>
+          <Typography component={'div'}>
          
-          <List>
+          <List key={45}>
             {lang.map(nlanguages)}
           </List>
            
@@ -446,12 +445,13 @@ function About() {
       </Accordion>
 
        {/* Fifth Accordion */}
-       <Accordion>
+        <Accordion key={91}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
-          id="panel1a-header"
           id="accordian5"
+          
+          
         >
           <div className="Acoordiantwo">
           <Typography className={classes.heading} style={{paddingRight:20}}>Hobbies </Typography>
@@ -459,8 +459,8 @@ function About() {
           </div>
         </AccordionSummary>
         <AccordionDetails id="inneraccordian5">
-          <Typography>
-            <List>
+          <Typography component={'div'}>
+            <List key={54}>
               {hobbies.map(nhobbies)}
            </List>
           </Typography>

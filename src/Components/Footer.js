@@ -1,24 +1,9 @@
 import React from 'react';
 import {Box, Grid, Snackbar} from '@material-ui/core';
 import Alert from '@material-ui/lab/Alert';
-import { makeStyles } from '@material-ui/core/styles';
 import "./Styles/Footer.css";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& label.Mui-focused': {
-      color: 'cyan',
-    },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'white',
-    },
-    
-  },
-  heading: {
-    color:'green',
-   
-  },
-}));
+
 
 
 
@@ -31,7 +16,7 @@ function Footer() {
     window.open("https://www.google.com");
   
   }
-  const classes = useStyles();
+ 
   const [open, setOpen] = React.useState(false);
   const handleClick = () => {
       setOpen(!open);
@@ -82,7 +67,7 @@ function Footer() {
               </div>
               <div className="col">
                 <h6 className="footercontact">Total page views { } :</h6>
-                <a className="footercontact"><img src="https://counter2.stat.ovh/private/freecounterstat.php?c=rcd1wbl4ugzxedk5e265mqt6lfa19kuy" border="0"  alt="website counter" /></a>
+                <span className="footercontact"><img src="https://counter2.stat.ovh/private/freecounterstat.php?c=rcd1wbl4ugzxedk5e265mqt6lfa19kuy" border="0"  alt="website counter" /></span>
               </div>
             </div>
 
@@ -117,7 +102,3 @@ export default Footer
 
 
 
-{/* <Grid item xs={12} sm={12} md={6} className="pagecounter">
-      <a  style={{}} ><img src="https://counter6.stat.ovh/private/freecounterstat.php?c=wk8enutcz59lxg9gwek3c8d8rn3ht5nw" border="0" alt="Total page views" /></a>
-
-      </Grid> */}

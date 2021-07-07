@@ -140,3 +140,12 @@ useEffect(()=>{
     
     </div>
   );
+
+
+
+
+
+  const formdatafun = () => {
+    var x = document.getElementById("formdata").value;
+   console.log(x);
+}

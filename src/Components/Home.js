@@ -41,14 +41,7 @@ const loginmodalstyles = makeStyles((theme) => ({
 // Home usestyles
 
 
-const useStyles = makeStyles({
-    root: {
-      maxWidth: 1000,
-    },
-    media: {
-      height: 140,
-    },
-  });
+
 
 
 function Home() {
@@ -73,7 +66,7 @@ function Home() {
           <Signup />
         </Grid>
         <Grid item xs={5}>
-          <img className="loginimg" src={Loginimage} alt="Profile photo"/>
+          <img className="loginimg" src={Loginimage} alt=""/>
         </Grid>
       </Grid>
       
@@ -87,21 +80,20 @@ function Home() {
 
 
   // Home reuired functions
-    const classes = useStyles();
+    
     let name ="Kiran Reddy Siddu";
-    let education = "BTech"
     
         useEffect(()=>{
           Aos.init( {duration:3000} )
           },[]);
   // Ends here
         return (
-            <div class="homemain">
+            <div className="homemain">
                 <div className="homephoto" style={{marginTop:76}} >
                    
                    <Grid container  spacing={2} direction="column" alignItems="center" justify="center">
                        <Grid item xs={5} sm={4} md={3} lg={2} style={{}}>
-                   <img data-aos="fade-right" data-aos-delay="500" className="boxes" data-aos="fade-right" src={kiranresumeimage} alt="Profile Photo" />
+                   <img data-aos="fade-right" data-aos-delay="500" className="boxes" src={kiranresumeimage} alt="" />
                     </Grid>
                     <Grid item  xs={12} sm={10} md={6} lg={4}>
                     <div data-aos="fade-left" data-aos-delay="500" id="nameafterphoto" style={{fontSize:40,paddingLeft:30}} >{name}</div>
@@ -111,7 +103,7 @@ function Home() {
                 
                         <h5 >if you want to know more plaese login !!!</h5>
                         <div id="linkinhome">
-                        <a onClick={handleOpen} id="linkinhome" style={{cursor: "pointer",  fontSize:20, color:'blue'}} >Login</a>
+                        <span onClick={handleOpen} id="linkinhome"  style={{cursor: "pointer",  fontSize:20, color:'blue'}} >Login</span>
                         </div>
                         <div className="container">
                           
