@@ -143,7 +143,7 @@ useEffect(()=>{
 
 
 
-
+// getting form data
 
   const formdatafun = () => {
     var x = document.getElementById("formdata").value;

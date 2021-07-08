@@ -35,7 +35,7 @@ function Footer() {
            <Grid container direction="row" alignItems="center" justify="center" spacing={0}>
              <Grid item xs={6} sm={4} md={4}  >
                <div className="pov">
-               <Box onClick={kiransite} className="kiran" color="white" bgcolor="palevioletred" p={2}>
+               <Box onClick={kiransite} className="kiran" color="white" bgcolor="palevioletred" p={2} style={{cursor: "pointer"}}>
                   <h4 >Preetham</h4>
                 </Box>
                 </div>

@@ -82,13 +82,7 @@ function Projects() {
     </div>
 
 
-       {/* <Button variant="secondary" onClick={handleClick} >Click here</Button>
-       <Snackbar open={open}  autoHideDuration={3000} onClose={handleClose}>
-           <Alert  onClose={handleClose} severity="success" style={{backgroundColor:'#6ef067', width:'300px'}}>
-               Success
-           </Alert>
-
-       </Snackbar> */}
+       
         <Footer />
     </>
     )
